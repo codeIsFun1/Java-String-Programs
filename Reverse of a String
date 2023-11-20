@@ -1,0 +1,13 @@
+public class Main
+{
+    public static String reverse(String s){
+        String str="";
+        for (int i=0;i<=s.length()-1;i++){
+            str=s.charAt(i)+str;
+        } 
+        return str;
+    }
+	public static void main(String[] args) {
+		System.out.println(reverse("AUTHENTICATION"));
+	}
+}
