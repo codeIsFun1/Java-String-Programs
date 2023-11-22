@@ -1,0 +1,14 @@
+public class Main
+{
+    public static String convert(char[] c){
+        String s="";
+        for (int i=0;i<=c.length-1;i++){
+            s=s+c[i];
+        } 
+        return s;
+    }
+	public static void main(String[] args) {
+	    char c[]={'A','p','p','l','e'};
+	    System.out.println(convert(c));
+	}
+}
