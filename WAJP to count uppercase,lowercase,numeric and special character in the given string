@@ -1,0 +1,27 @@
+public class Main
+{
+    public static void seperate(String s){
+    int countUpper=0,countLower=0,countNumeric=0,countSpecial=0;
+        for (int i=0;i<=s.length()-1;i++){
+            if (s.charAt(i)>=65 && s.charAt(i)<=90){
+                countUpper++;
+            } 
+            else if (s.charAt(i)>=97 && s.charAt(i)<=122){
+                countLower++;
+            } 
+            else if (s.charAt(i)>=48 && s.charAt(i)<=57){
+                countNumeric++;
+            } 
+            else
+            countSpecial++;
+        }
+        System.out.println("UpperCase Count --> "+countUpper);
+        System.out.println("LowerCase Count --> "+countLower);
+        System.out.println("Numeric Count --> "+countNumeric);
+        System.out.println("Special Character Count --> "+countSpecial);
+        
+    }
+	public static void main(String[] args) {
+        seperate("gsdhfGFASScv7733Sg3@!");
+	}
+}
