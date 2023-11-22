@@ -1,0 +1,11 @@
+public class Main
+{
+    public static String meth(String s,int n){
+        String str="";
+        str=s.substring(0,n)+s.substring(s.length()-n);
+        return str;
+    }
+	public static void main(String[] args) {
+		System.out.println(meth("Hello World",2));
+	}
+}
