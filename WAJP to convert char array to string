@@ -12,3 +12,14 @@ public class Main
 	    System.out.println(convert(c));
 	}
 }
+method -2
+public class Main
+{
+    public static String convert(char[] c){
+        return new String(c);
+    }
+	public static void main(String[] args) {
+	    char c[]={'A','p','p','l','e'};
+	    System.out.println(convert(c));
+	}
+}
