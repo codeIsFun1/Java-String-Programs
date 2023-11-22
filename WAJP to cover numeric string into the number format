@@ -1,0 +1,16 @@
+
+public class Main
+{
+    public static int convert(String s){
+        int num=0;
+        for (int i=0;i<=s.length()-1;i++){
+            if (s.charAt(i)>=48 && s.charAt(i)<=57) {
+                num=num*10+s.charAt(i)-48;
+            }
+        } 
+        return num;
+    }
+	public static void main(String[] args) {
+		System.out.println(convert("123456789"));
+	}
+}
