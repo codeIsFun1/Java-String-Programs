@@ -1,0 +1,25 @@
+
+public class Main
+{
+    public static String concat(String s){
+        String str="";
+        for (int i=0;i<=s.length()-1;i++){
+            if (s.charAt(i)>=48 && s.charAt(i)<=57){
+                str=str+add(s.charAt(i-1),(s.charAt(i)-48)-1);
+            }
+            else
+                str=str+s.charAt(i);
+        } 
+        return str;
+    }
+    public static  String add(char ch,int n){
+        String res="";
+        for (int i=1;i<=n;i++ ){
+            res=res+ch;
+        } 
+        return res;
+    }
+	public static void main(String[] args) {
+		System.out.println(concat("a3b2c1d4z1"));
+	}
+}
