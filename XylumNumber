@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class XylumNumber{
+
+     public static String isXylum(int num){
+		int temp=num,sumExtreme=0,sumMean=0,c=0;
+		while(temp!=0){
+		      int rem=temp%10;
+		      c++;
+		      if(c>1 && c<count(num)){
+			    sumMean=sumMean+rem;
+		      }
+		      else
+			sumExtreme=sumExtreme+rem;
+			temp=temp/10;
+		}
+	  return sumExtreme==sumMean?"Xylum Number":"Pholem Number";
+	
+     }	
+
+     public static int count(int num){
+	   int c=0;
+	   while(num!=0){
+	     c++;
+	     num=num/10;
+	   }
+        return c;
+     }
+
+     public static void main(String [] args){
+
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the number to be checked!");
+	if(sc.hasNextInt()){
+	    int num=sc.nextInt();
+	    System.out.println(num+" is --> "+isXylum(num));
+	}
+	else
+	System.out.println("Invalid Input");
+     }
+}
